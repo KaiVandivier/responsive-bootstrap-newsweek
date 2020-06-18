@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Newsweek Bootstrap</title>
+  </head>
+  <body>
+    <!-- Nav Bar, v2 (two-layer) -->
+    <header class="header">
+      <!-- Header top bar (becomes fixed when < lg bkpt) -->
+      <div
+        class="header-top bg-brand d-flex justify-content-between align-items-center navbar-expand-lg"
+      >
+        <!-- Weather widget and date (shows on lg+) -->
+        <div class="header-top-left">
+          <p class="font-weight-bold">73&deg; Palo Alto CA &rsaquo;</p>
+          <date>Wed, Jun 17, 2020</date>
+        </div>
+
+        <!-- Small Logo (shows on < lg) -->
+        <a class="navbar-brand header-logo-sm" href="/"
+          ><img src="assets/newsweek-logo-small.png" alt="Newsweek"
+        /></a>
+
+        <!-- Large Logo (shows on lg+) -->
+        <a class="header-logo-lg" href="#">
+          <img src="assets/newsweek-logo.png" alt="Newsweek" />
+        </a>
+
+        <!-- Header top right (shows on both small and large) -->
+        <div class="header-top-right">
+          <a class="login font-weight-bold" href="#">
+            <span class="login-text">LOGIN</span>
+            <span class="login-icon"
+              ><img src="assets/newsweek-login-small.png"
+            /></span>
+          </a>
+          <a class="subscribe font-weight-bold" href="#">SUBSCRIBE &rsaquo;</a>
+
+          <!-- Nav toggle button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Nav Links (toggleable) -->
+      <nav class="header-bottom navbar navbar-expand-lg">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                >U.S. <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">World</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tech & Science</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Culture</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Newsgeek</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Health</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">The Debate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Vantage</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Weather</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+            />
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container-xl main">
+      <div class="row px-lg-4">
+        <!-- Left Col -->
+        <div class="col-md-5 col-lg-3 py-4">
+          <h1 class="block-title">Featured Stories</h1>
+
+          <article class="article">
+            <a href="#">
+              <img
+                class="img-fluid"
+                src="https://source.unsplash.com/random/801x534?v=1"
+                alt="article1"
+              />
+            </a>
+            <div>
+              <a href="#" class="article-title"
+                >Immunity for Police Threatens to Stall Federal Police Reform Bills</a
+              >
+            </div>
+            <p class="article-summary">
+              The topic has emerged as one with little common ground and could create an impasse for lawmakers amid their sprint to overhaul the country's law enforcement agencies before leaving town for a two-week Fourth of July recess.
+            </p>
+          </article>
+          <article class="article">
+            <a href="#">
+              <img
+                class="img-fluid"
+                src="https://source.unsplash.com/random/801x534?v=2"
+                alt="article2"
+              />
+            </a>
+            <div>
+              <a href="#" class="article-title"
+                >First North Korea, Now Iran Warns South Korea Over Its Ties to U.S.</a
+              >
+            </div>
+            <p class="article-summary">
+              Both North Korea and Iran have hit out South Korea over its perceived over-dependence on a decades-long alliance with the United States.
+            </p>
+          </article>
+          <article class="article">
+            <a href="">
+              <img
+                class="img-fluid"
+                src="https://source.unsplash.com/random/801x534?v=3"
+                alt="article3"
+              />
+            </a>
+            <div>
+              <a href="#" class="article-title"
+                >Employees Who Return to Part-Time WOrk MAy Still Collect Some Unemployment</a
+              >
+            </div>
+            <p class="article-summary">
+              Workers who are recalled part-time may be able to still receive at least half of their state unemployment stipend but it may depend on where you live.
+            </p>
+          </article>
+        </div>
+
+        <!-- Middle Col -->
+        <!-- (Moves to first in order on small screens) -->
+        <div class="col-md-7 col-lg-6 py-4 top-story">
+          <h1 class="block-title">Top Story</h1>
+
+          <article class="article">
+            <a href="">
+              <img
+                class="img-fluid"
+                src="https://source.unsplash.com/random/801x534?v=5"
+                alt="article1"
+              />
+            </a>
+            <div>
+              <a href="#" class="article-title"
+                >Atlanta Officer Charged in Fatal Shooting of Rayshard Brooks</a
+              >
+            </div>
+            <p class="article-summary">
+              L. Chris Stewart, the Brooks' family attorney, said the reason why Brooks was killed was because the value of African American males' lives "doesn't mean too much to officers nowadays."
+            </p>
+          </article>
+          <article class="article">
+            <a href="">
+              <img
+                class="img-fluid"
+                src="https://source.unsplash.com/random/801x534?v=6"
+                alt="article2"
+              />
+            </a>
+            <div>
+              <a href="#" class="article-title"
+                >Trump Said There Is an AIDS Vaccine, Experts Say President Is Confused</a
+              >
+            </div>
+            <p class="article-summary">
+              Trump made the comments while speaking about a potential vaccine against the coronavirus.
+            </p>
+          </article>
+          <article class="article">
+            <a href="#">
+              <img
+                class="img-fluid"
+                src="https://source.unsplash.com/random/801x534?v=7"
+                alt="article3"
+              />
+            </a>
+            <div>
+              <a href="#" class="article-title"
+                >Facebook Deletes Hundreds of Hate Group Accounts Targeting BLM Protests</a
+              >
+            </div>
+            <p class="article-summary">
+              "We saw accounts from both organizations discussing attending protests in various U.S states with plans to carry weapons," a Facebook spokesperson said this week, confirming the removals.
+            </p>
+          </article>
+        </div>
+
+        <!-- Right col -->
+        <div class="col-lg-3 py-4">
+          <h1 class="block-title">Opinion</h1>
+          <article class="opinion d-flex pb-3">
+            <a href="">
+              <img
+                class="rounded-circle align-self-start mr-3"
+                src="https://source.unsplash.com/random/63x63?v=1"
+                alt=""
+              />
+            </a>
+            <div>
+              <h1 class="opinion-title">
+                <a href="" class="opinion-title">Trump's Tulsa Rally Rubs Salt in Old, Open Racial Wounds</a>
+              </h1>
+              <div class="opinion-author">By Hannibal B. Johnson</div>
+            </div>
+          </article>
+          <article class="opinion d-flex pb-3">
+            <a href="">
+              <img
+                class="rounded-circle align-self-start mr-3"
+                src="https://source.unsplash.com/random/63x63?v=2"
+                alt=""
+              />
+            </a>
+            <div>
+              <h1 class="opinion-title">
+                <a href="" class="opinion-title">Companies Can Keep Their Hollow Statements on Racism. We Need Real Change</a>
+              </h1>
+              <div class="opinion-author">By Alexis Harris</div>
+            </div>
+          </article>
+          <article class="opinion d-flex pb-3">
+            <a href="">
+              <img
+                class="rounded-circle align-self-start mr-3"
+                src="https://source.unsplash.com/random/63x63?v=3"
+                alt=""
+              />
+            </a>
+            <div>
+              <h1 class="opinion-title">
+                <a href="" class="opinion-title"
+                  >Reading Bostock Through a Racial Justice Lens</a
+                >
+              </h1>
+              <div class="opinion-author">By Michele Goodwin</div>
+            </div>
+          </article>
+          <article class="opinion d-flex pb-3">
+            <a href="">
+              <img
+                class="rounded-circle align-self-start mr-3"
+                src="https://source.unsplash.com/random/63x63?v=4"
+                alt=""
+              />
+            </a>
+            <div>
+              <h1 class="opinion-title">
+                <a href="#" class="opinion-title"
+                  >The Government Doesn't Deserve My Money</a
+                >
+              </h1>
+              <div class="opinion-author">By Uninformed Grinch</div>
+            </div>
+          </article>
+          <article class="opinion d-flex pb-3">
+            <a href="">
+              <img
+                class="rounded-circle align-self-start mr-3"
+                src="https://source.unsplash.com/random/63x63?v=5"
+                alt=""
+              />
+            </a>
+            <div>
+              <h1 class="opinion-title">
+                <a href="#" class="opinion-title">Abolish All Government</a>
+              </h1>
+              <div class="opinion-author">By A Little Too Far Left</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <!-- Bootstrap scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
