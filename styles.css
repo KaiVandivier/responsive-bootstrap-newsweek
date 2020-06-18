@@ -49,15 +49,18 @@
   font-size: 0.8rem;
 }
 
-.subscribe,
-.subscribe:hover {
-  background: gold;
+.subscribe {
   color: black;
+  background: gold;
   border-radius: 1rem;
   padding: 0.15rem 1rem;
   width: max-content;
-  text-decoration: none;
   margin-left: 0.25rem;
+}
+
+.subscribe:hover {
+  color: black;
+  text-decoration: none;
 }
 
 .login,
